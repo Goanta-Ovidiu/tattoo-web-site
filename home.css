@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Merriweather+Sans:wght@700&family=Roboto&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Merriweather Sans", sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 30vmin;
+  background-color: black;
+  margin: 0;
+  padding: 2rem 0;
+}
+header h1,
+p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  font-size: 5vmin;
+  color: white;
+  width: 50%;
+}
+
+.logo {
+  width: 80%;
+  display: block;
+  margin: auto;
+  border-radius: 50%;
+}
+.logo-link {
+  position: absolute;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  width: 20%;
+  font-size: 1rem;
+  margin: 1rem;
+  top: 0;
+}
+
+.hamburger-menu {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 1rem;
+  margin: 1.5rem;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.primary-nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: black;
+  width: 40%;
+  height: 50%;
+  display: none;
+}
+
+.nav-collapse {
+  width: 100%;
+  height: 100%;
+  line-height: 5;
+  text-align: left;
+  margin: 1rem;
+  padding: 0;
+}
+
+.nav-list {
+  list-style-type: none;
+}
+.nav-list a {
+  text-decoration: none;
+  color: white;
+}
+.exit {
+  position: absolute;
+  background-color: white;
+  right: 0;
+}
+
+.secondary-nav {
+  display: inline-block;
+  width: 100%;
+  height: 20%;
+  padding: 0;
+  margin: 0;
+}
+
+.secondary-list {
+  display: inline-block;
+  width: 10%;
+  height: 10%;
+}
