@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Merriweather+Sans:wght@700&family=Roboto&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Merriweather Sans", sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 30vmin;
+  background-color: black;
+  margin: 0;
+  padding: 2rem 0;
+}
+header h1,
+p {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 0 auto;
+  font-size: 5vmin;
+  color: white;
+  width: 50%;
+}
+
+.logo {
+  width: 80%;
+  display: block;
+  margin: auto;
+  border-radius: 50%;
+}
+.logo-link {
+  position: absolute;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  width: 20%;
+  font-size: 1rem;
+  margin: 1rem;
+  top: 0;
+}
+
+.hamburger-menu {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0.5rem;
+  margin: 1.5rem;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.primary-nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: black;
+  width: 40%;
+  height: 50%;
+  display: none;
+}
+
+.nav-collapse {
+  width: 100%;
+  height: 100%;
+  line-height: 5;
+  text-align: left;
+  margin: 1rem;
+  padding: 0;
+}
+
+.nav-list {
+  list-style-type: none;
+}
+.nav-list a {
+  text-decoration: none;
+  color: white;
+}
+.exit {
+  position: absolute;
+  background-color: white;
+  right: 0;
+}
+
+.secondary-nav {
+  display: inline-block;
+  width: 100%;
+  height: 13%;
+  padding: 2rem;
+  background-color: lightgray;
+  border-bottom: 1px solid black;
+}
+.secondary-nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+.secondary-nav ul li {
+  display: block;
+  list-style-type: none;
+  width: 15vw;
+  height: 100%;
+}
+.secondary-nav ul li img {
+  height: 3rem;
+  width: 3rem;
+  display: block;
+  margin: 0 auto;
+  padding: 0.2rem;
+}
+
+.secondary-list a {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+  font-size: 0.7rem;
+  color: black;
+  font-weight: 600;
+}
+.top-section {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  margin: 0;
+  padding: 0;
+}
+.top-bg-image {
+  background-image: url(/img/Mihai.Tatto.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-clip: border-box;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+.right-side {
+  transform: rotate(-90deg);
+  transform-origin: right;
+  float: right;
+  display: flex;
+  margin-right: 1rem;
+  width: 11rem;
+  height: 3rem;
+  font-size: 0.5rem;
+  display: none;
+}
+.right-side img {
+  width: 2rem;
+  height: 2rem;
+  margin-left: 0.5rem;
+}
+.right-side h2 {
+  background-color: black;
+  color: white;
+  padding: 1rem;
+  margin: 0;
+}
+
+footer {
+  background-color: black;
+  margin: 0;
+  padding: 2rem;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+}
+.footer-nav {
+  display: inline-block;
+  width: 100%;
+}
+.footer-nav ul {
+  padding: 0;
+}
+.footer-nav ul li {
+  display: block;
+  list-style-type: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  line-height: 2;
+}
+.footer-nav ul li a {
+  text-decoration: none;
+  color: white;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid white;
+}
+
+footer p {
+  display: inline-block;
+  font-size: 1rem;
+  padding: 0;
+  margin: 1rem auto;
+}
