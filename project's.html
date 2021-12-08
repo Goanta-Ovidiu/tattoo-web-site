@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="home.css" />
-    <title>Goanta Mihai</title>
+    <link rel="stylesheet" href="project's.css" />
+    <title>Goanta Mihai Project's</title>
   </head>
   <body>
     <header>
       <h1>Mihai Goanta</h1>
       <p>Tattoo Artist</p>
-      <a class="logo-link" href=""
+      <a class="logo-link" href="index.html"
         ><img class="logo" src="/img/Logo.png" alt="" />Home</a
       >
       <a class="hamburger-menu" href=""><img src="/img/list.png" alt="" /></a>
@@ -28,9 +28,11 @@
       </nav>
     </header>
     <nav class="secondary-nav">
-      <ul class="secondary-content">
+      <ul>
         <li class="secondary-list">
-          <a href=""><img src="/img/location.png" alt="" />Approach</a>
+          <a href="https://goo.gl/maps/B8w7waUHp8R3ZeLm6" target="_blank"
+            ><img src="/img/location.png" alt="" />Approach</a
+          >
         </li>
         <li class="secondary-list">
           <a href=""><img src="/img/galerie.png" alt="" />Project's</a>
@@ -47,11 +49,33 @@
       </ul>
     </nav>
     <section class="top-section">
-      <aside class="right-side">
-        <a href=""><img src="/img/facebook.png" alt="" /></a>
-        <a href=""><img src="/img/instagram.png" alt="" /></a>
-        <h2>Appointment</h2>
-      </aside>
+      <div class="project_img">
+        <img src="img/galerie.png" alt="" />
+        <img src="img/galerie.png" alt="" />
+        <img src="img/galerie.png" alt="" />
+        <img src="img/galerie.png" alt="" />
+        <img src="img/galerie.png" alt="" />
+        <img src="img/galerie.png" alt="" />
+        <img src="img/galerie.png" alt="" />
+        <img src="img/galerie.png" alt="" />
+      </div>
     </section>
+    <form action="/img/" method="post">
+      <label for="img">Select image:</label>
+      <input type="file" id="img" name="img" accept="image/*" />
+      <input type="submit" />
+    </form>
+    <footer>
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="">Privacy Policy</a></li>
+          <li><a href="">Terms And Condition</a></li>
+          <li><a href="">FAQ</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </nav>
+      <p>&copy;Tattoo Artist 2021</p>
+    </footer>
   </body>
 </html>
