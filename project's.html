@@ -4,29 +4,36 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="project's.css" />
-    <title>Goanta Mihai Project's</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Goanta Mihai</title>
   </head>
   <body>
-    <header>
-      <h1>Mihai Goanta</h1>
-      <p>Tattoo Artist</p>
+    <header id="header">
       <a class="logo-link" href="index.html"
-        ><img class="logo" src="/img/Logo.png" alt="" />Home</a
+        ><img class="logo-image" src="/img/Logo.png" alt="" />Home</a
       >
-      <a class="hamburger-menu" href=""><img src="/img/list.png" alt="" /></a>
-
+      <div class="title">
+        <h1 class="header-title">Mihai Goanta</h1>
+        <p class="header-subtitle">Tattoo Artist</p>
+      </div>
+      <div class="hamburger-menu">
+        <div class="hamburger-linie"></div>
+      </div>
+    </header>
+    <aside class="aside">
       <nav class="primary-nav">
-        <ul class="nav-collapse">
-          <a href=""><img class="exit" src="/img/close.png" alt="" /></a>
-          <li class="nav-list"><a href="">Home</a></li>
-          <li class="nav-list"><a href="">Hygene </a></li>
-          <li class="nav-list"><a href="">Others</a></li>
-          <li class="nav-list"><a href="">Price</a></li>
-          <li class="nav-list"><a href="">About me</a></li>
+        <ul class="nav-content">
+          <li class="nav-list">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-list"><a class="nav-link" href="">Hygene </a></li>
+          <li class="nav-list"><a class="nav-link" href="">Others</a></li>
+          <li class="nav-list"><a class="nav-link" href="">Price</a></li>
+          <li class="nav-list"><a class="nav-link" href="">About me</a></li>
         </ul>
       </nav>
-    </header>
+    </aside>
+
     <nav class="secondary-nav">
       <ul>
         <li class="secondary-list">
@@ -35,7 +42,9 @@
           >
         </li>
         <li class="secondary-list">
-          <a href=""><img src="/img/galerie.png" alt="" />Project's</a>
+          <a href="project's.html"
+            ><img src="/img/galerie.png" alt="" />Projects</a
+          >
         </li>
         <li class="secondary-list">
           <a href=""><img src="/img/calendar.png" alt="" />Appointments</a>
@@ -48,16 +57,17 @@
         </li>
       </ul>
     </nav>
-    <section class="top-section">
+    <section class="top-section project">
       <div class="project_img">
-        <img src="img/galerie.png" alt="" />
-        <img src="img/galerie.png" alt="" />
-        <img src="img/galerie.png" alt="" />
-        <img src="img/galerie.png" alt="" />
-        <img src="img/galerie.png" alt="" />
-        <img src="img/galerie.png" alt="" />
-        <img src="img/galerie.png" alt="" />
-        <img src="img/galerie.png" alt="" />
+        <img src="/img/galerie.png" alt="" />
+        <img src="/img/galerie.png" alt="" />
+        <img src="/img/galerie.png" alt="" />
+        <img src="/img/galerie.png" alt="" />
+        <img src="/img/galerie.png" alt="" />
+        <img src="/img/galerie.png" alt="" />
+        <img src="/img/galerie.png" alt="" />
+        <img src="/img/galerie.png" alt="" />
+        <smart-calendar></smart-calendar>
       </div>
     </section>
     <form action="/img/" method="post">
@@ -77,5 +87,6 @@
       </nav>
       <p>&copy;Tattoo Artist 2021</p>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>

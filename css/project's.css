@@ -45,7 +45,7 @@ p {
   width: 50%;
 }
 
-.logo {
+.logo-image {
   width: 80%;
   display: block;
   margin: auto;
@@ -82,6 +82,7 @@ p {
   width: 40%;
   height: 50%;
   display: none;
+  z-index: 999;
 }
 
 .nav-collapse {
