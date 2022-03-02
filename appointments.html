@@ -34,7 +34,7 @@
       </nav>
     </aside>
 
-    <nav class="secondary-nav">
+    <nav class="secondary-nav projects-nav">
       <ul>
         <li class="secondary-list">
           <a href="https://goo.gl/maps/B8w7waUHp8R3ZeLm6" target="_blank"
@@ -48,31 +48,44 @@
         </li>
         <li class="secondary-list">
           <a href="appointments.html"
-            ><img src="/img/calendar.png" alt="" />Appointments</a
+            ><img
+              src="/img/calendar.png"
+              alt=""
+              class="active"
+            />Appointments</a
           >
         </li>
         <li class="secondary-list">
-          <a href="contact.html"
-            ><img src="/img/contact.png" alt="" />Contact</a
-          >
+          <a href="contact.html"><img src="/img/contact.png" alt="" />Contact</a>
         </li>
         <li class="secondary-list">
           <a href=""><img src="/img/search.png" alt="" />Search</a>
         </li>
       </ul>
     </nav>
-    <section class="middle-section">
-      <div class="middle-bg-image">
-        <aside class="right-aside">
-          <h2>Follow-Me</h2>
-          <a href="https://www.facebook.com/mihai.goanta.5" target="_blank"
-            ><img src="/img/facebook.png" alt="facebook profile Mihai Goanta"
-          /></a>
-          <a href="https://www.instagram.com/mihaigoanta/" target="_blank"
-            ><img src="/img/instagram.png" alt="instagram profile Mihai Goanta"
-          /></a>
-        </aside>
-      </div>
+    <section class="middle-section calendar">
+      <form class="check-appointment">
+
+        <p class="fallbackLabel">Chose your appointment:</p>
+        <input type="date">
+        <button>Check now!</button>
+        
+      </form>
+      <form class="personal-data">
+        <label for="bday">Enter your birthday:</label>
+        <input type="date" id="bday" name="bday">
+        <label for="first-name">First Name:</label>
+        <input type="text" name="first-name" id="" placeholder="Your first name">
+        <label for="last-name">Last Name:</label>
+        <input type="text" name="last-name" id="" placeholder="Your last name">
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="" placeholder="Your E-mail" required><br>
+        <label for="message">Your Message</label>
+        <textarea name="message" id="" cols="30" rows="10" placeholder="Your message"></textarea>
+
+        <button id="appointment-btn"><a href="mailto:goantza_jr@yahoo.com">Send</a></button>
+
+    </form>
     </section>
     <footer>
       <nav class="footer-nav">
@@ -84,6 +97,7 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
+      </section>
       <p>&copy;Tattoo Artist 2021</p>
     </footer>
     <script src="script.js"></script>
