@@ -31,14 +31,13 @@
           <li class="nav-list">
             <a class="nav-link" href="index.html">Home</a>
           </li>
-          <li class="nav-list"><a class="nav-link" href="">Hygene </a></li>
-          <li class="nav-list"><a class="nav-link" href="">Others</a></li>
+          <li class="nav-list"><a class="nav-link" href="/asset/hygiene.html">Hygene </a></li>
+          <li class="nav-list"><a class="nav-link" href="/asset/others.html">Others</a></li>
           <li class="nav-list"><a class="nav-link" href="">Price</a></li>
           <li class="nav-list"><a class="nav-link" href="">About me</a></li>
         </ul>
       </nav>
     </aside>
-
     <nav class="secondary-nav">
       <ul class="secondary-nav-content">
         <li class="secondary-list">
@@ -67,50 +66,101 @@
       <div class="middle-bg-image"></div>
     </section>
     <section class="projects-section" id="project">
-      <div class="project_img">
-        <img src="/img/galerie.png" alt="" />
-        <img src="/img/galerie.png" alt="" />
-        <img src="/img/galerie.png" alt="" />
-        <img src="/img/galerie.png" alt="" />
-        <img src="/img/galerie.png" alt="" />
-        <img src="/img/galerie.png" alt="" />
-        <img src="/img/galerie.png" alt="" />
-        <img src="/img/galerie.png" alt="" />
+
+        <div class="mySlides">
+          <div class="numbertext">1 / 6</div>
+            <img src="/img/Mihai-Goanta.jpg">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">2 / 6</div>
+            <img src="/img/galerie.png" >
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">3 / 6</div>
+            <img src="/img/galerie.png" >
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">4 / 6</div>
+            <img src="/img/galerie.png" >
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">5 / 6</div>
+            <img src="/img/galerie.png" >
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">6 / 6</div>
+            <img src="/img/galerie.png" >
+        </div>
+      
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+        <!-- Image text -->
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+      
+        <!-- Thumbnail images -->
+        <div class="row">
+          <div class="column">
+            <img class="demo cursor" src="/img/Mihai-Goanta.jpg"  onclick="currentSlide(1)" alt="The Woods">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="/img/galerie.png"  onclick="currentSlide(2)" alt="Cinque Terre">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="/img/galerie.png"  onclick="currentSlide(3)" alt="Mountains and fjords">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="/img/galerie.png" onclick="currentSlide(4)" alt="Northern Lights">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="/img/galerie.png"  onclick="currentSlide(5)" alt="Nature and sunrise">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="/img/galerie.png"  onclick="currentSlide(6)" alt="Snowy Mountains">
+          </div>
+        </div>
       </div>
+     
     </section>
     <section class="calendar" id="calendar">
-      <form class="personal-data">
-        <label for="bday">Appointment</label>
-        <input type="date" id="bday" name="bday" />
-        <label for="first-name">First Name:</label>
+      <form class="personal-data" id="sendEmail">
+        <h3>GET IN TOUCH</h3>
+        <input type="date" id="appointment" name="appointment" />
         <input
           type="text"
           name="first-name"
-          id=""
-          placeholder="Your first name"
+          id="first-name"
+          placeholder="First name"
+          required
         />
-        <label for="last-name">Last Name:</label>
         <input
           type="text"
           name="last-name"
-          id=""
-          placeholder="Your last name"
+          id="last-name"
+          placeholder="Last name"
+          required
         />
-        <label for="email">Email:</label>
         <input
           type="email"
           name="email"
-          id=""
-          placeholder="Your E-mail"
+          id="email"
+          placeholder="E-mail address"
           required
         /><br />
-        <label for="message">Your Message</label>
+        <label for="message">Your Message:</label>
         <textarea
           name="message"
-          id=""
-          cols="30"
+          id="textarea"
           rows="10"
-          placeholder="Your message"
+          placeholder="How can I help you?"
         ></textarea>
         <input type="file" />
         <button type="submit" id="appointment-btn">Send</button>
@@ -120,7 +170,7 @@
       <img src="/img/contact-image.jpg" alt="" class="profile-image-contact" />
       <address>
         Written by
-        <a href="mailto:webmaster@example.com">Miahi Goanta</a>.<br />
+        <a href="mailto:goantza03@gmail.com">Mihai Goanta</a>.<br />
         or <br />
         Call me on : 01234586999 <br />
         Visit us at: Example.com<br />
@@ -140,6 +190,9 @@
       </nav>
       <p>&copy;Tattoo Artist 2021</p>
     </footer>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
     <script src="script.js"></script>
+      
   </body>
 </html>
