@@ -83,29 +83,3 @@ function showSlides(n) {
   captionText.innerHTML = dots[slideIndex - 1].alt;
   setTimeout(showSlides, 2000);
 }
-
-// email contact
-
-const emailForm = document.querySelector("#sendEmail");
-const userFirstsName = document.querySelector("#first-name");
-const userLastName = document.querySelector("#last-name");
-const userEmail = document.querySelector("#email");
-const userMessege = document.querySelector("#textarea");
-
-const sendEmailForm = function sendEmail() {
-  Email.send({
-    Host: "smtp.elasticemail.com",
-    Username: "goantza03@gmail.com",
-    Password: "231D4BF52933C4C8E92D318F4420DB1D4605",
-    To: "goantza03@gmail.com",
-    From: userEmail.value,
-    Subject: "This is the subject",
-    Body:
-      "Name: " +
-      userFirstsName.value +
-      userLastName.value +
-      "<br> Email: " +
-      userEmail.value,
-  }).then((message) => alert((message = "Succes!")));
-};
-// emailForm.addEventListener("onsubmit", sendEmailForm());

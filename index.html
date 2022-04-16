@@ -130,8 +130,8 @@
       </div>
      
     </section>
-    <section class="calendar" id="calendar">
-      <form class="personal-data" id="sendEmail">
+    <section class="appointment-section " id="appointment_section">
+      <form action="https://formsubmit.co/c47605a87b42c15867e6c7b583028d97" method="POST" enctype="multipart/form-data" class="personal-data" id="sendEmail" >
         <h3>GET IN TOUCH</h3>
         <input type="date" id="appointment" name="appointment" />
         <input
@@ -156,13 +156,16 @@
           required
         /><br />
         <label for="message">Your Message:</label>
+        <input type="hidden" name="_captcha" value="false">
         <textarea
           name="message"
           id="textarea"
           rows="10"
           placeholder="How can I help you?"
         ></textarea>
-        <input type="file" />
+        <input type="file" name="attachment" accept="image/png, image/jpeg, image/jpg" >
+        <!-- <input type="hidden" name="_cc" value="another@email.com"> -->
+        <input type="hidden" name="_next" value="http://127.0.0.1:5502/index.html">
         <button type="submit" id="appointment-btn">Send</button>
       </form>
     </section>
@@ -190,8 +193,8 @@
       </nav>
       <p>&copy;Tattoo Artist 2021</p>
     </footer>
-    <script src="https://smtpjs.com/v3/smtp.js">
-    </script>
+    <!-- <script src="https://smtpjs.com/v3/smtp.js">
+    </script> -->
     <script src="script.js"></script>
       
   </body>

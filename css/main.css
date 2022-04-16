@@ -444,9 +444,9 @@ h6 {
   opacity: 1;
 }
 
-/* Calendar section ! */
+/* Appointment section! */
 
-.calendar {
+.appointment-section {
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -475,7 +475,7 @@ h6 {
   border-radius: 5px;
 }
 
-.calendar textarea {
+.appointment-section textarea {
   resize: none;
 }
 
@@ -483,6 +483,8 @@ h6 {
   padding: 1rem;
   color: black;
   border-radius: 5px;
+  width: 50%;
+  margin: 0 auto;
 }
 
 /* Contact Section */
