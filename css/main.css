@@ -330,7 +330,7 @@ h6 {
 .projects-section {
   position: relative;
   background-color: lightgray;
-  width: 100%;
+  width: 100vw;
   max-height: 80vh;
   overflow: scroll;
   padding-bottom: 1rem;

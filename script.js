@@ -52,7 +52,7 @@ openBurgerMenu();
 function createTattooImg() {
   for (let i = 1; i < 169; i++) {
     const createImg = document.createElement("img");
-    const tattooImgSrc = "/tattoo.img/" + i + ".jpg";
+    const tattooImgSrc = "tattoo.img/" + i + ".jpg";
     createImg.src = tattooImgSrc;
     listImg.append(createImg);
   }
