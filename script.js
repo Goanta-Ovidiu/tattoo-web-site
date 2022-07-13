@@ -25,10 +25,9 @@ function openBurgerMenu() {
     }
   });
 }
+// changing burgermenu color on scroll
 
 let lastKnownScrollPosition = 0;
-
-// changing burgermenu color on scroll
 
 function scrollBarColor() {
   document.addEventListener("scroll", function (e) {
@@ -48,38 +47,30 @@ function scrollBarColor() {
 scrollBarColor();
 openBurgerMenu();
 
-let slideIndex = 1;
-showSlides(slideIndex);
+// Carousel Tattoo  Images
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides((slideIndex += n));
+function createTattooImg() {
+  for (let i = 1; i < 169; i++) {
+    const createImg = document.createElement("img");
+    const tattooImgSrc = "/tattoo.img/" + i + ".jpg";
+    createImg.src = tattooImgSrc;
+    listImg.append(createImg);
+  }
 }
+// let currentIndex = 1;
+const listImg = document.querySelector(".demo");
+// let slides = document.querySelector(".imageSlides");
+// console.log(slides);
+let activeImage = document.querySelector(".active-image");
+const nextBtn = document.querySelector(".next");
+const prevBtn = document.querySelector(".previous");
+// const imageSlideshow = document.querySelector(".images-slideshow");
+listImg.addEventListener("click", (e) => {
+  let selectedPicture = e.target.closest("img").src;
+  activeImage.src = selectedPicture;
+  console.log(selectedPicture);
+});
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides((slideIndex = n));
-}
+nextBtn.addEventListener("click", () => {});
 
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("demo");
-  let captionText = document.getElementById("caption");
-  if (n > slides.length) {
-    slideIndex = 1;
-  }
-  if (n < 1) {
-    slideIndex = slides.length;
-  }
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " active";
-  captionText.innerHTML = dots[slideIndex - 1].alt;
-  setTimeout(showSlides, 2000);
-}
+createTattooImg();
