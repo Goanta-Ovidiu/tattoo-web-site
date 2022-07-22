@@ -65,11 +65,30 @@ let activeImage = document.querySelector(".active-image");
 const nextBtn = document.querySelector(".next");
 const prevBtn = document.querySelector(".previous");
 // const imageSlideshow = document.querySelector(".images-slideshow");
+const closeBtn = document.querySelector(".close-img");
+const slidesBtn = document.querySelectorAll(".slider-btn");
+
 listImg.addEventListener("click", (e) => {
   let selectedPicture = e.target.closest("img").src;
   activeImage.src = selectedPicture;
+  activeImage.style.display = "block";
+  prevBtn.style.display = "block";
+  nextBtn.style.display = "block";
+  closeBtn.style.display = "block";
   console.log(selectedPicture);
 });
+
+closeBtn.addEventListener("click", () => {
+  activeImage.style.display = "none";
+  closeBtn.style.display = "none";
+  prevBtn.style.display = "none";
+  nextBtn.style.display = "none";
+});
+
+// slidesBtn.addEventListener("click", () => {
+//   activeImage.style.display = "none";
+//   closeBtn.style.display = "none";
+// });
 
 nextBtn.addEventListener("click", () => {});
 

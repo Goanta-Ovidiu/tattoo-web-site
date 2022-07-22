@@ -338,6 +338,7 @@ h6 {
 
 .row {
   width: 100%;
+  height: 100%;
   margin-top: 2rem;
 }
 
@@ -353,9 +354,15 @@ h6 {
   box-shadow: 1px 1px 5px 0px white;
 }
 
-.imageSlides img {
+.active-image {
+  display: none;
   width: 100%;
   height: 350px;
+}
+
+.imageSlides img {
+  width: 100%;
+  /* height: 350px; */
 }
 
 .images-slideshow {
@@ -381,11 +388,19 @@ h6 {
   border-radius: 50%;
 }
 
+.close-img {
+  display: none;
+  top: 30px;
+  right: 15px;
+}
+
 .previous {
+  display: none;
   left: 2%;
 }
 
 .next {
+  display: none;
   right: 2%;
 }
 
