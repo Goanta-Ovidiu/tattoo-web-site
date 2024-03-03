@@ -50,11 +50,13 @@ openBurgerMenu();
 // Carousel Tattoo  Images
 
 function createTattooImg() {
+  let tattooImages = document.getElementById("tattoo.img");
   for (let i = 1; i < 169; i++) {
     const createImg = document.createElement("img");
     const tattooImgSrc = "tattoo.img/" + i + ".jpg";
     createImg.src = tattooImgSrc;
     listImg.append(createImg);
+    console.log(tattooImages);
   }
 }
 // let currentIndex = 1;
