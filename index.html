@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="main.css" />
+  <title>Goanta Mihai</title>
+</head>
+
+<body>
+  <header id="header">
+    <div class="logo">
+      <a class="logo-link" href="index.html"><img class="logo-image" src="img/Logo.png"
+          alt="logo image Mihai Goanta" /></a>
+    </div>
+    <div class="title">
+      <h1 class="header-title">Mihai Goanta</h1>
+      <p class="header-subtitle">Tattoo Artist</p>
+    </div>
+    <div class="hamburger-menu">
+      <div class="hamburger-linie"></div>
+    </div>
+  </header>
+  <aside class="aside">
+    <nav class="primary-nav">
+      <ul class="nav-content">
+        <li class="nav-list">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-list"><a class="nav-link" href="hygiene.html">Hygene </a></li>
+        <li class="nav-list"><a class="nav-link" href="others.html">Others</a></li>
+        <li class="nav-list"><a class="nav-link" href="">Price</a></li>
+        <li class="nav-list"><a class="nav-link" href="">About me</a></li>
+      </ul>
+    </nav>
+  </aside>
+  <nav class="secondary-nav">
+    <ul class="secondary-nav-content">
+      <li class="secondary-list">
+        <a href="#project"><img src="img/galerie.png" alt="" />Projects</a>
+      </li>
+      <li class="secondary-list">
+        <a href="#appointment_section"><img src="img/calendar.png" alt="" />Appointments</a>
+      </li>
+      <li class="secondary-list">
+        <a href="#contact"><img src="img/contact.png" alt="" />Contact</a>
+      </li>
+    </ul>
+  </nav>
+  <aside class="right-aside">
+    <h2>Follow-Me</h2>
+    <a href="https://www.facebook.com/mihai.goanta.5" target="_blank"><img src="img/facebook.png"
+        alt="facebook profile Mihai Goanta" /></a>
+    <a href="https://www.instagram.com/mihaigoanta/" target="_blank"><img src="img/instagram.png"
+        alt="instagram profile Mihai Goanta" /></a>
+  </aside>
+  <section class="middle-section">
+    <div class="middle-bg-image"></div>
+  </section>
+  <section class="projects-section" id="project">
+    <div class="images-slideshow">
+      <div class="imageSlides">
+        <img class="active-image" src="img/contact-foto.jpg">
+      </div>
+      <a class="slider-btn previous">❮</a>
+      <a class="slider-btn next">❯</a>
+      <a class="slider-btn close-img">X</a>
+    </div>
+    <div class="row">
+      <ul class="column">
+        <li class="demo"></li>
+      </ul>
+    </div>
+    </div>
+
+  </section>
+  <section class="appointment-section " id="appointment_section">
+    <form action="https://formsubmit.co/c47605a87b42c15867e6c7b583028d97" method="POST" enctype="multipart/form-data"
+      class="personal-data" id="sendEmail">
+      <h3>GET IN TOUCH</h3>
+      <input type="date" id="appointment" name="appointment" />
+      <input type="text" name="first-name" id="first-name" placeholder="First name" required />
+      <input type="text" name="last-name" id="last-name" placeholder="Last name" required />
+      <input type="email" name="email" id="email" placeholder="E-mail address" required /><br />
+      <label for="message">Your Message:</label>
+      <input type="hidden" name="_captcha" value="false">
+      <textarea name="message" id="textarea" rows="10" placeholder="do you have a message for me?"></textarea>
+      <input type="file" name="attachment" accept="image/png, image/jpeg, image/jpg">
+      <input type="hidden" name="_next" value="http://127.0.0.1:5502/index.html">
+      <button type="submit" id="appointment-btn">Send</button>
+    </form>
+  </section>
+  <section class="contact-section" id="contact">
+    <img src="img/contact-image.jpg" alt="" class="profile-image-contact" />
+    <address>
+      Written by
+      <a href="mailto:goantza03@gmail.com">Mihai Goanta</a>.<br />
+      or <br />
+      Call me on : <a href="tel: 012345667"> 01234586999 </a><br />
+      Visit us at: Example.com<br />
+      Box 564, Disneyland<br />
+      USA
+    </address>
+  </section>
+  <footer>
+    <nav class="footer-nav">
+      <ul>
+        <li><a href="">Privacy Policy</a></li>
+        <li><a href="">Terms And Condition</a></li>
+        <li><a href="">FAQ</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <p>&copy;Tattoo Artist 2021</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
