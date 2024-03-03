@@ -2,4 +2,4 @@
 
 ## Something to exercise!!
 
-https://github.com/Goanta-Ovidiu/tattoo-web-site.git
+https://goanta-ovidiu.github.io/tattoo-web-site/
